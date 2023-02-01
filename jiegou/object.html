@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象解构</title>
+</head>
+<body>
+<script>
+    let person = {
+        name: 'John',
+        age: 35,
+        children:{
+            name:"非遗",
+            age:21
+        }
+    };
+    // var name = person.name;
+    // var age = person.age;
+    // console.log(name,age);
+
+    // let {name,age} = person;
+    // console.log(name,age);
+    // let name,age;
+    // ({name,age}=person);
+    // console.log(name,age);
+
+    // let {name:pName,age,city='北京'}=person;
+    // //console.log(name,age,city);
+    // let name="李四";
+    // console.log(name,pName);
+
+    // let {children:{name:cName}}=person;
+    // console.log(cName);
+
+    // let classify = {
+    //     title:"菜品",
+    //     children:{
+    //         title:"肉类",
+    //         children:{
+    //             title:"五花肉"
+    //         }   
+    //     }
+    // }
+    // let {children:{children:{title}}} = classify;
+    // console.log(classify);
+
+    let {...personobj} = person;
+    console.log(personobj);
+
+
+</script>
+</body>
+</html>

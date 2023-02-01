@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩展运算符对象的操作</title>
+</head>
+<body>
+<script>
+
+    //es5
+    // let obj1 = {a:1,b:2};
+    // let obj2 = obj1;
+    // obj2.a = 3;
+    // console.log(obj2); //a:3 b:2
+    // console.log(obj1); //a:3 b:2
+
+    // let obj1 = {a:1,b:2};
+    // let obj2 = {}; //开辟新的内存空间，就不会互相污染了
+    // for (let key in obj1) {
+    //     obj2[key] = obj1[key];
+    // }
+    // obj2.a = 3;
+    // console.log(obj1);
+    // console.log(obj2);
+
+    //es6 对象的浅拷贝
+    let obj1 = {a:1,b:2};
+    let obj2 = {...obj1}; //...运算符，第一层深拷贝，第二层之后浅拷贝
+    obj2.a = 3;
+    console.log(obj1);
+    console.log(obj2);
+
+    //对象合并
+    let payload = {title:"羊肉串",amount:10,price:3};
+    let user = {uid:1,shop_id:20};
+    let data = {...payload,...user};
+    console.log(data);
+
+    
+
+</script>
+</body>
+</html>

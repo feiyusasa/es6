@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象字面量语法扩展</title>
+</head>
+<body>
+<script>
+    //属性初始值的简写
+    // let title = "VUE";
+    // let price = 98;
+    // //es6
+    // let book = {title, price};
+    // console.log(book);
+
+    // //对象方法的简写
+    // let person = {
+    //     // say:function() {
+    //     //     console.log("say方法")
+    //     // }
+    //     //简写
+    //     say() {
+    //         console.log("say方法")
+    //     }
+    // }
+
+    //计算属性名
+    //es6
+    let ageAttr='age';
+    let person = {
+        ['first-name']:"四",
+        ['last-name']:"李",
+        [ageAttr]:20
+    }
+    console.log(person);
+
+</script>
+</body>
+</html>

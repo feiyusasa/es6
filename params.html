@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>默认参数</title>
+</head>
+<body>
+<script>
+    // function getName(name) {
+    //     var newName = name || "颤三"; //设置默认值
+    //     console.log(newName);
+    // }
+    // getName(0);
+
+    //es5
+    // function getName(name) {
+    //     var newName = name!=undefined?name:"颤三"; //用三元运算符判断
+    //     console.log(newName);
+    // }
+    // getName(0);
+
+    //es6
+    function getName(name="颤三") {
+        console.log(name);
+    }
+    getName(); 
+
+</script>
+</body>
+</html>

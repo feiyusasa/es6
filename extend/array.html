@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩展运算符数组的操作</title>
+</head>
+<body>
+<script>
+    //数组的拷贝
+    // let arr1 = [1, 2, 3];
+    // let arr2 = [...arr1];
+    // arr1.push(4);
+    // console.log(arr1); //1，2，3，4
+    // console.log(arr2); //1，2，3
+
+    //数组的合并
+    // let arr1 = [1, 2, 3];
+    // let arr2 = [4, 5, 6];
+    // let arrData = [...arr1, ...arr2];
+    // console.log(arrData);
+
+    let data = [
+        {id:1,title:"孙苦苦"},
+        {id:2,title:"猪八戒"},
+        {id:3,title:"唐僧"}
+    ];
+    let newData = [
+        {id:4,title:"白骨精"},
+        {id:5,title:"蜘蛛精"},
+        {id:6,title:"黑熊精"}
+    ];
+    //es5
+    // for (let i=0; i<newData.length; i++) {
+    //     data.push(newData[i]);
+    // }
+    //es6
+    //console.log(...newData);
+    data.push(...newData);
+    console.log(data);
+
+</script>
+</body>
+</html>

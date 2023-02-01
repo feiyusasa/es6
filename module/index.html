@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模块化</title>
+</head>
+<body>
+<script type="module">
+    //导入
+    // import {name as aName,age,URL,getName} from "./global.js";
+    // let name = "八戒"
+    // console.log(name,aName);
+    // console.log(age);
+    // console.log(URL);
+    // console.log(getName());
+
+    //导入整个模块
+    // import * as person from "./global.js";
+    // console.log(person.age);
+    // console.log(person.URL);
+    // console.log(person.getName());
+
+    import personaabb from "./default.js";
+    console.log(personaabb.name,personaabb.age);
+    personaabb.getName();
+
+</script>
+</body>
+</html>

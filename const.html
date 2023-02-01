@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+<body>
+<script>
+    //const常量命名规范：全部大写. 对于引用类型保证的不是变量的值不变。而是保证变量指向的内存地址所保存的数据不允许改变
+
+    const NAME="张三";
+    //NAME="李四"; 不能改变
+    console.log(NAME);
+
+    // const ARR=[1,2,3];
+    // ARR.push(4);
+    // console.log(ARR);
+
+    // const OBJ={book:"Html5"};
+    // OBJ.book="Vue";
+    // console.log(OBJ);
+
+    const ARR=[1,2,3];
+    ARR=[6,7,8]; //报错
+    console.log(ARR);
+
+    
+
+</script>
+</body>
+</html>

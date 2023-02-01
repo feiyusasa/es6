@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板字面量之变量占位符</title>
+</head>
+<body>
+<script>
+    //es5
+    // var name = "弗拉";
+    // var str = "欢迎"+name+"同学,学习vue";
+    // console.log(str);
+
+    //es6
+    let name = "明哥";
+    let str = `欢迎${name}同学,学习Vue`;
+    console.log(str);
+
+    let price = 10;
+    let amount = 3;
+    let text = `商品价格：${price},数量：${amount},小计：${(amount*price).toFixed(2)}}`;
+    console.log(text);
+
+</script>
+</body>
+</html>
